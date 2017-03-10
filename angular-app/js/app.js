@@ -1,7 +1,9 @@
 let locations = [
-  {city: "Washington", state: "DC", country: "USA", image: ""}
-
+  {id: 1, city: "Washington", state: "DC", country: "USA", img_url: "", area: ""},
+  {id: 2, city: "New York City", state: "NY", country: "USA", img_url: "", area: ""},
+  {id: 3, city: "Boston", state: "MA", country: "USA", img_url: "", area: ""}
 ]
+
 
 
 angular
@@ -25,13 +27,39 @@ angular
     // "LocationFactory",
     LocationIndexControllerFunction
   ])
+  .controller("LocationNewController", [
+    "$stateParams",
+    "$state",
+    // Needed for rails
+    // "LocationFactory",
+    LocationNewControllerFunction
+  ])
+  .controller("LocationShowController", [
+    "$stateParams",
+    "$state",
+    // Needed for rails
+    // "LocationFactory",
+    LocationShowControllerFunction
+  ])
 
 function RouterFunction($stateProvider){
   $stateProvider
     .state("locationIndex", {
       url: "/locations",
-      templateUrl: "js/ng-views/location-index.html",
+      templateUrl: "js/ng-views/locations/index.html",
       controller: "LocationIndexController",
+      controllerAs: "vm"
+    })
+    .state("locationNew", {
+      url: "/locations/new",
+      templateUrl: "js/ng-views/locations/new.html",
+      controller: "LocationNewController",
+      controllerAs: "vm"
+    })
+    .state("locationShow", {
+      url: "/locations/:id",
+      templateUrl: "js/ng-views/locations/show.html",
+      controller: "LocationShowController",
       controllerAs: "vm"
     })
 }
@@ -46,4 +74,13 @@ function RouterFunction($stateProvider){
 
 function LocationIndexControllerFunction($stateParams, $state) {
   this.locations = locations;
+}
+
+function LocationNewControllerFunction($stateParams, $state) {
+
+}
+
+function LocationShowControllerFunction($stateParams, $state) {
+
+  this.location = locations[$stateParams.id];
 }
