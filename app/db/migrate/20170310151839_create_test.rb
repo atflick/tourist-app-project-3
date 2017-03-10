@@ -9,3 +9,4 @@ class CreateTest < ActiveRecord::Migration[5.0]
     end
   end
 end
+This file is lame.
