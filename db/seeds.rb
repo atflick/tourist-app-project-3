@@ -21,3 +21,6 @@ roaringfork = Event.create(name:"Roaring Fork", category: "restaurant", location
 foundingfarmers = Event.create(name:"Founding Farmers", category: "restaurant", location: washington_d.c.)
 beauty_and_the_beast = Event.create(name:"Beauty and the Beast", category: "movie", location: san_francisco)
 dada_life = Event.create(name"Data Life", category:"concert", location: san_francisco)
+
+
+Photo.create(title:"")

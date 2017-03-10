@@ -1,2 +1,3 @@
-class Location < ApplicationRecord
-end
+class Location < ActiveRecord::Base
+  has_many :events
+  end

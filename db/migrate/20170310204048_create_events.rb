@@ -5,6 +5,7 @@ class CreateEvents < ActiveRecord::Migration[5.0]
     t.string :address
     t.string :category
     t.string :rating
+    t.string :description
     t.string :time
     t.string :date
     t.string :phone_number

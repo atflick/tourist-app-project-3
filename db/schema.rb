@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170310204106) do
     t.string   "address"
     t.string   "category"
     t.string   "rating"
+    t.string   "description"
     t.string   "time"
     t.string   "date"
     t.string   "phone_number"
@@ -33,6 +34,10 @@ ActiveRecord::Schema.define(version: 20170310204106) do
   end
 
   create_table "locations", force: :cascade do |t|
+    t.string   "state"
+    t.string   "city"
+    t.string   "country"
+    t.string   "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
