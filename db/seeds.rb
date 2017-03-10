@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Event.destroy_all
+Location.destroy_all
+Photo.destroy_all
+
+austin = Location.create(name:"Austin")
+washington_d.c. = Location.create(name:"Washington D.C.")
+san_francisco = Location.create(name: "San Francisco")
+
+
+holocaust = Event.create(name:"Holocaust Museum", category: "museum", location: washington_d.c. )
+smashmouth = Event.create(name:"Smash Mouth", category: "concert", location: austin)
+roaringfork = Event.create(name:"Roaring Fork", category: "restaurant", location: austin)
+foundingfarmers = Event.create(name:"Founding Farmers", category: "restaurant", location: washington_d.c.)
+beauty_and_the_beast = Event.create(name:"Beauty and the Beast", category: "movie", location: san_francisco)
+dada_life = Event.create(name"Data Life", category:"concert", location: san_francisco)
