@@ -2,7 +2,7 @@ class CreateTest < ActiveRecord::Migration[5.0]
   def change
     create_table :tests do |t|
       sadfasdfasdfdasf
-      asdfsadfsdfsdf
+      asdfsThis line is lameadfsdfsdf
       sdfsdfdsfdsf
       sdfdsafds
       sadfasdf
