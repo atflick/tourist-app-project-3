@@ -74,13 +74,29 @@ function RouterFunction($stateProvider){
 
 function LocationIndexControllerFunction($stateParams, $state) {
   this.locations = locations;
+
+  // Rails
+  // this.locations = LocationFactory.query();
 }
 
 function LocationNewControllerFunction($stateParams, $state) {
+  this.newLocation = {};
+  this.addLocation = function() {
+    locations.push(this.newLocation);
+    $state.go("locationIndex");
+    console.log(locations);
+  }
 
+  // Rails
+  // this.location = new LocationFactory();
+  // this.addLocation = function(){
+  //   this.location.$save(function(location){
+  //     $state.go("locationShow", {id: location.id});
+  //   })
+  // }
 }
 
 function LocationShowControllerFunction($stateParams, $state) {
+  this.location = locations[$stateParams.id - 1];
 
-  this.location = locations[$stateParams.id];
 }
