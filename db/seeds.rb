@@ -8,13 +8,19 @@
 
 
 Location.destroy_all
-
+Event.destroy_all
 
 
 locations = Location.create([
   {city: "Washington", state: "DC", country: "USA", img_url: ""},
   {city: "New York City", state: "NY", country: "USA", img_url: ""},
   {city: "Boston", state: "MA", country: "USA", img_url: ""}
+  ])
+
+events = Event.create([
+  {name:"Holocaust Museum", category: "museum", location_id: 1},
+  {name:"Founding Farmers", category: "restaurant", location_id: 1},
+  {name:"Roaring Fork", category: "restaurant", location_id: 2}
   ])
 
 # austin = Location.create(name:"Austin")
