@@ -9,6 +9,7 @@
 
 Location.destroy_all
 Event.destroy_all
+Photo.destroy_all
 
 
 locations = Location.create([
@@ -22,6 +23,12 @@ events = Event.create([
   {name:"Founding Farmers", category: "restaurant", location_id: 1},
   {name:"Roaring Fork", category: "restaurant", location_id: 2}
   ])
+
+  photo = Photo.create([
+    {title: "At the ball game!", comment: "awesome PIC!" },
+    {title: "Chillin at the museum ", comment: "looks great!" },
+    {title: "just enjoying a movie", comment: "how was the movie?" }
+    ])
 
 # austin = Location.create(name:"Austin")
 # washington_d.c. = Location.create(name:"Washington D.C.")
