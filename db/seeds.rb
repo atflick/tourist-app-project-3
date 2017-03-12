@@ -12,17 +12,20 @@ Event.destroy_all
 
 
 locations = Location.create([
-  {city: "Washington", state: "DC", country: "USA", img_url: ""},
+  {city: "Washington", state: "DC", country: "USA", img_url: "/assets/images/Washington_DC.jpeg"},
   {city: "New York City", state: "NY", country: "USA", img_url: ""},
-  {city: "Boston", state: "MA", country: "USA", img_url: ""}
+  {city: "Boston", state: "MA", country: "USA", img_url: ""},
+  {city: "Austin", state: "TX", country: "USA", img_url: "/assets/images/Austin_TX.jpeg"}
+  {city: "San Francisco", state: "CA", country: "USA", img_url: "/assets/images/SanFrancisco.jpeg"}
   ])
 
 events = Event.create([
   {name:"Holocaust Museum", category: "museum", location_id: 1},
   {name:"Founding Farmers", category: "restaurant", location_id: 1},
-  {name:"Roaring Fork", category: "restaurant", location_id: 2}
+  {name:"Roaring Fork", category: "restaurant", location_id: 2},
+  {name: “Noble Sandwich Co.”, category: “Dining”, address: “12223 Ranch Road 620 N Ste 105, Austin, TX 78750”, phone_number: “(512) 382-6248”, website_url: “http://noblesandwiches.com/“, location_id: 4},
+  {name: “South By Southwest 2017”, category: “Entertainment”, date: “10 - 19 March, 2017”, website_url: “https://www.sxsw.com/“, phone_number: “(512) 467-7979”, address: “Various”, location_id: 4}
   ])
-
 # austin = Location.create(name:"Austin")
 # washington_d.c. = Location.create(name:"Washington D.C.")
 # san_francisco = Location.create(name: "San Francisco")
