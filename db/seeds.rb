@@ -13,34 +13,25 @@ Photo.destroy_all
 
 
 locations = Location.create([
-  {city: "Washington", state: "DC", country: "USA", img_url: "/assets/images/Washington_DC.jpeg"},
-  {city: "New York City", state: "NY", country: "USA", img_url: ""},
-  {city: "Boston", state: "MA", country: "USA", img_url: ""},
-  {city: "Austin", state: "TX", country: "USA", img_url: "/assets/images/Austin_TX.jpeg"},
-  {city: "San Francisco", state: "CA", country: "USA", img_url: "/assets/images/SanFrancisco.jpeg"}
+  {city: "Washington", state: "DC", country: "USA", img_url: "img/locations/washdc.jpg"},
+  {city: "New York City", state: "NY", country: "USA", img_url: "img/locations/nyc.jpg"},
+  {city: "Boston", state: "MA", country: "USA", img_url: "img/locations/boston.jpg"},
+  {city: "Austin", state: "TX", country: "USA", img_url: "img/locations/austin.jpg"},
+  {city: "San Francisco", state: "CA", country: "USA", img_url: "img/locations/sanfran.jpg"},
+  {city: "Chicago", state: "IL", country: "USA", img_url: "img/locations/chicago.jpg"}
   ])
 
 events = Event.create([
   {name:"Holocaust Museum", category: "museum", location_id: 1},
   {name:"Founding Farmers", category: "restaurant", location_id: 1},
-  {name:"Roaring Fork", category: "restaurant", location_id: 2},
+  {name:"Roaring Fork", category: "restaurant", location_id: 4},
   {name: "Noble Sandwich Co.", category: "Dining", address: "12223 Ranch Road 620 N Ste 105, Austin, TX 78750", phone_number: "(512) 382-6248", website_url: "http://noblesandwiches.com/", location_id: 4},
   {name: "South By Southwest 2017", category: "Entertainment", date: "10 - 19 March, 2017", website_url: "https://www.sxsw.com/", phone_number: "(512) 467-7979", address: "Various", location_id: 4}
   ])
 
-
-
-# austin = Location.create(name:"Austin")
-# washington_d.c. = Location.create(name:"Washington D.C.")
-# san_francisco = Location.create(name: "San Francisco")
-#
-#
-# holocaust = Event.create(name:"Holocaust Museum", category: "museum", location: washington_d.c. )
-# smashmouth = Event.create(name:"Smash Mouth", category: "concert", location: austin)
-# roaringfork = Event.create(name:"Roaring Fork", category: "restaurant", location: austin)
-# foundingfarmers = Event.create(name:"Founding Farmers", category: "restaurant", location: washington_d.c.)
-# beauty_and_the_beast = Event.create(name:"Beauty and the Beast", category: "movie", location: san_francisco)
-# dada_life = Event.create(name"Data Life", category:"concert", location: san_francisco)
-#
-#
-# Photo.create(title:"")
+photos = Photo.create([
+  {comment: "Really feels like I am at a farm", title: "Awesome atmosphere", event_id: 2, img_url: "https://cdn0.vox-cdn.com/thumbor/e6t9abocouZbB36URwXdTdDnoVs=/0x600/cdn0.vox-cdn.com/uploads/chorus_asset/file/5604703/6501329909_1de4e39440_o.0.jpg"},
+  {comment: "We had a packed house!", title: "Busy night", event_id: 2, img_url: "http://www.wearefoundingfarmers.com/wp-content/uploads/bfi_thumb/moco_location_large-307xn2mx8uc8pwp2gmhse8.jpg"},
+  {comment: "This was amazing", title: "Chicken and Waffles", event_id: 2, img_url: "https://s3-media1.fl.yelpcdn.com/bphoto/sjvaVgZIecSozah5Lzba1Q/ls.jpg"},
+  {comment: "Morning prep in action", title: "Opening up at RF", event_id: 3, img_url: "http://www.kraemereng.com/Kraemer/pageimages/RF%20Austin%204.JPG"}
+  ])
