@@ -12,11 +12,12 @@ Event.destroy_all
 
 
 locations = Location.create([
-  {city: "Washington", state: "DC", country: "USA", img_url: "/assets/images/Washington_DC.jpeg"},
-  {city: "New York City", state: "NY", country: "USA", img_url: ""},
-  {city: "Boston", state: "MA", country: "USA", img_url: ""},
-  {city: "Austin", state: "TX", country: "USA", img_url: "/assets/images/Austin_TX.jpeg"},
-  {city: "San Francisco", state: "CA", country: "USA", img_url: "/assets/images/SanFrancisco.jpeg"}
+  {city: "Washington", state: "DC", country: "USA", img_url: "img/locations/washdc.jpg"},
+  {city: "New York City", state: "NY", country: "USA", img_url: "img/locations/nyc.jpg"},
+  {city: "Boston", state: "MA", country: "USA", img_url: "img/locations/boston.jpg"},
+  {city: "Austin", state: "TX", country: "USA", img_url: "img/locations/austin.jpg"},
+  {city: "San Francisco", state: "CA", country: "USA", img_url: "img/locations/sanfran.jpg"},
+  {city: "Chicago", state: "IL", country: "USA", img_url: "img/locations/chicago.jpg"}
   ])
 
 events = Event.create([
