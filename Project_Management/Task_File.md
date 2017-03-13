@@ -1,11 +1,13 @@
 Tasks
   - Finish category Index view
-  - Build event States in app.js
-  - Build event Controllers in app.js
-  - Build event Functions in app.js
-  - Build category States in app.js
+  - Build event Routes in app.js - Completed
+  - Build event Controllers in app.js - Completed
+  - Build event Functions in app.js - Completed
+
+  <!-- We shouldn't need a category model. It can just be an attribute for an event. -->
+  <!-- - Build category States in app.js
   - Build category Controllers in app.js
-  - Build category Functions in app.js
+  - Build category Functions in app.js -->
   - Test event views
   - Test category views
   - Finish event show view
