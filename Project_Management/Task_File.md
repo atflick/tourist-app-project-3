@@ -13,3 +13,13 @@ Tasks
   - test category CRUD
   - gather seed data - min 2 events / location. Try to get various categories.
   - begin photo gallery
+  - drop downs for states, categories, and countries on edit/new pages
+  - work on photo gallery:
+    - need view pages
+    - edit and new forms
+  - page styling/css
+    - pick fonts
+    - decide on overall design (colors, layout, etc.)
+    - implement design
+
+    
