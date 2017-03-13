@@ -28,6 +28,8 @@ events = Event.create([
   {name: "South By Southwest 2017", category: "Entertainment", date: "10 - 19 March, 2017", website_url: "https://www.sxsw.com/", phone_number: "(512) 467-7979", address: "Various", location_id: 4}
   ])
 
+
+
 # austin = Location.create(name:"Austin")
 # washington_d.c. = Location.create(name:"Washington D.C.")
 # san_francisco = Location.create(name: "San Francisco")
