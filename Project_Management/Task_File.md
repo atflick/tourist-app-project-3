@@ -21,5 +21,3 @@ Tasks
     - pick fonts
     - decide on overall design (colors, layout, etc.)
     - implement design
-
-    
