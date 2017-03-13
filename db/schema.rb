@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20170311213657) do
   create_table "photos", force: :cascade do |t|
     t.string   "comment"
     t.string   "title"
+    t.string   "img_url"
     t.integer  "event_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
