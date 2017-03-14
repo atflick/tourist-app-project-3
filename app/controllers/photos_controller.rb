@@ -7,7 +7,8 @@ class PhotosController < ApplicationController
   end
 
   def show
-    render json: @photo
+    @photos = Photo.all
+    render json: @photos
   end
 
   def create
