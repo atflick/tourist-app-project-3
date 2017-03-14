@@ -11,22 +11,15 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
-    render json: @events
-  end
-
-  # GET /events/new
-  def new
-    @event = Event.new
-  end
-
-  # GET /events/1/edit
-  def edit
+    @events = Event.all
+    render json: @event
   end
 
   # POST /events
   # POST /events.json
   def create
-    @event = Event.new(event_params)
+    @event = Event.create!(event_params)
+    render json: @event
 
     respond_to do |format|
       if @event.save
@@ -42,25 +35,25 @@ class EventsController < ApplicationController
   # PATCH/PUT /events/1
   # PATCH/PUT /events/1.json
   def update
-    respond_to do |format|
-      if @event.update(event_params)
-        format.html { redirect_to @event, notice: 'Event was successfully updated.' }
-        format.json { render :show, status: :ok, location: @event }
-      else
-        format.html { render :edit }
-        format.json { render json: @event.errors, status: :unprocessable_entity }
-      end
-    end
+    @event.update!(event_params)
+    render json: @event
   end
+
+  # GET /events/new
+  def new
+    @event = Event.new
+  end
+
+  # GET /events/1/edit
+  def edit
+  end
+
 
   # DELETE /events/1
   # DELETE /events/1.json
   def destroy
     @event.destroy
-    respond_to do |format|
-      format.html { redirect_to events_url, notice: 'Event was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    render nothing: true
   end
 
   private
@@ -71,6 +64,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.fetch(:event, {})
+      params.require(:event).permit(:name, :address, :category, :rating, :description, :time, :date, :phone_number, :map_url, :img_url, :location_id)
     end
 end
