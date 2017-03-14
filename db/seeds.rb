@@ -24,8 +24,8 @@ locations = Location.create([
 events = Event.create([
   {name:"Holocaust Museum", category: "museum", address: "100 Raoul Wallenberg Pl SW, Washington, DC 20024", phone_number: "(555) 555-555", website_url: "https://www.ushmm.org/", location_id: 1},
   {name:"Founding Farmers", category: "restaurant", address: "1924 Pennsylvania Ave NW, Washington, DC 20006", phone_number: "(202) 822-8783", website_url: "http://www.wearefoundingfarmers.com/", location_id: 1},
-  {name:"Roaring Fork", category: "restaurant", address: "701 congress Ave.", phone_number: "(512) 583-0000", website_url: "http://roaringfork.com/", location_id: 4},
-  {name: "Noble Sandwich Co.", category: "Dining", address: "12223 Ranch Road 620 N Ste 105, Austin, TX 78750", phone_number: "(512) 382-6248", website_url: "http://noblesandwiches.com/", location_id: 4},
+  {name:"Roaring Fork", category: "restaurant", address: "701 congress Ave.", phone_number: "(512) 583-0000", description: "Wood-fired steaks & slow-roasted pork, plus cocktails & dessert in the InterContinental Hotel.", website_url: "http://roaringfork.com/", map_url: "https://www.google.com/maps/place/Roaring+Fork/@30.2690097,-97.7443015,15.94z/data=!4m8!1m2!2m1!1sRoaring+Fork!3m4!1s0x0:0xce6e982ebf5ebae2!8m2!3d30.2690543!4d-97.7419871?hl=en", location_id: 4},
+  {name: "Noble Sandwich Co.", category: "Dining", address: "12223 Ranch Road 620 N Ste 105, Austin, TX 78750", phone_number: "(512) 382-6248", description: "A farm-to-table slant applies to big breakfast & lunch in casual, counter-service digs with a patio.", website_url: "http://noblesandwiches.com/", map_url: "https://www.google.com/maps/place/Noble+Sandwich+Co./@30.3190469,-97.7410031,17z/data=!3m1!4b1!4m5!3m4!1s0x8644ca610046a8d9:0x4c4b4811639b364d!8m2!3d30.3190469!4d-97.7388144?hl=en", location_id: 4},
   {name: "South By Southwest 2017", category: "Entertainment", date: "10 - 19 March, 2017", website_url: "https://www.sxsw.com/", phone_number: "(512) 467-7979", address: "Various", location_id: 4}
   ])
 
