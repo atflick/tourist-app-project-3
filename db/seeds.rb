@@ -9,6 +9,7 @@
 
 Location.destroy_all
 Event.destroy_all
+Photo.destroy_all
 
 
 locations = Location.create([
@@ -21,9 +22,9 @@ locations = Location.create([
   ])
 
 events = Event.create([
-  {name:"Holocaust Museum", category: "museum", location_id: 1},
-  {name:"Founding Farmers", category: "restaurant", location_id: 1},
-  {name:"Roaring Fork", category: "restaurant", location_id: 4},
+  {name:"Holocaust Museum", category: "museum", address: "100 Raoul Wallenberg Pl SW, Washington, DC 20024", phone_number: "(555) 555-555", website_url: "https://www.ushmm.org/", location_id: 1},
+  {name:"Founding Farmers", category: "restaurant", address: "1924 Pennsylvania Ave NW, Washington, DC 20006", phone_number: "(202) 822-8783", website_url: "http://www.wearefoundingfarmers.com/", location_id: 1},
+  {name:"Roaring Fork", category: "restaurant", address: "701 congress Ave.", phone_number: "(512) 583-0000", website_url: "http://roaringfork.com/", location_id: 4},
   {name: "Noble Sandwich Co.", category: "Dining", address: "12223 Ranch Road 620 N Ste 105, Austin, TX 78750", phone_number: "(512) 382-6248", website_url: "http://noblesandwiches.com/", location_id: 4},
   {name: "South By Southwest 2017", category: "Entertainment", date: "10 - 19 March, 2017", website_url: "https://www.sxsw.com/", phone_number: "(512) 467-7979", address: "Various", location_id: 4}
   ])
