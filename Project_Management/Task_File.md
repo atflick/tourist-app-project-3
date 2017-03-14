@@ -11,7 +11,7 @@ Tasks
   - Test event views
   - Test category views
   - Finish event show view
-  - test event CRUD
+  - test event CRUD - Completed
   - test category CRUD
   - gather seed data - min 2 events / location. Try to get various categories.
   - begin photo gallery
