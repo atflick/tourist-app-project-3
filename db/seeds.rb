@@ -22,7 +22,6 @@ locations = Location.create([
   ])
 
 events = Event.create([
-<<<<<<< HEAD
   {name:"Holocaust Museum", category: "museum", address: "100 Raoul Wallenberg Pl SW, Washington, DC 20024", phone_number: "(555) 555-555", website_url: "https://www.ushmm.org/", location_id: 1},
   {name:"Founding Farmers", category: "restaurant", address: "1924 Pennsylvania Ave NW, Washington, DC 20006", phone_number: "(202) 822-8783", website_url: "http://www.wearefoundingfarmers.com/", location_id: 1},
   {name:"Kennedy Center", category: "entertainment", address: "2700 F St NW, Washington, DC 20566", phone_number: "(202) 467-4600", website_url: "http://www.kennedy-center.org/", location_id: 1},
@@ -41,6 +40,7 @@ events = Event.create([
   {name: "Art institute Chicago", category: "museum", website_url: "http://www.artic.edu/visit?campaign=chicago%20art%20museum&gclid=COaEp5jk2NICFQQz0wodF9cC7Q", phone_number: "(312) 443-3600", address: " 111 South Michigan Avenue", location_id: 6},
   {name: "Wrigley Field", category: "sports", date: "4-3 March 2017", website_url: "http://chicago.cubs.mlb.com/chc/ballpark/", phone_number: "(773) 404-2827", address: "1060 W Addison St, Chicago, IL 60613", location_id: 6},
   {name: "Tanta Chicago", category: "restaurant", website_url: "https://www.tantachicago.com/", phone_number: "(312) 222-9700", address: "118 W Grand Ave, Chicago, IL 60654", location_id: 6},
+])
 
 
 photos = Photo.create([
