@@ -1,28 +1,38 @@
 class CommentsController < ApplicationController
   before_action :set_comments, only: [:show, :update, :destroy]
 
+  def index
+    @event = Event.find(params[:event_id])
+    @comments = @event.comments
+    render json: @comments
+  end
+
+  def show
+    @comments = Comment.where(event_id: params[:id])
+    render json: @comments
+  end
 
   def create
-    @comments = Comments.create!(comments_params)
+    @comment = Comment.create!(comment_params)
     render json: @comments
   end
 
   def update
-    @comments.update!(comments_params)
-    render json: @comments
+    @comment.update!(comment_params)
+    render json: @comment
   end
 
   def destroy
-    @comments.destroy
+    @comment.destroy
     render nothing: true
   end
 
   private
     def set_comments
-      @event = Comments.find(params[:id])
+      @comment = Comment.find(params[:id])
     end
 
-    def comments_params
-      params.require(:comments).permit(:comments, :title)
+    def comment_params
+      params.require(:comments).permit(:comment, :author, :event_id)
     end
 end

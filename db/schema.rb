@@ -16,12 +16,12 @@ ActiveRecord::Schema.define(version: 20170315180148) do
   enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
-    t.string   "comments"
-    t.string   "title"
-    t.integer  "events_id"
+    t.string   "comment"
+    t.string   "author"
+    t.integer  "event_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["events_id"], name: "index_comments_on_events_id", using: :btree
+    t.index ["event_id"], name: "index_comments_on_event_id", using: :btree
   end
 
   create_table "events", force: :cascade do |t|
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20170315180148) do
     t.index ["event_id"], name: "index_photos_on_event_id", using: :btree
   end
 
-  add_foreign_key "comments", "events", column: "events_id"
+  add_foreign_key "comments", "events"
   add_foreign_key "events", "locations"
   add_foreign_key "photos", "events"
 end
