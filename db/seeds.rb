@@ -13,12 +13,12 @@ Photo.destroy_all
 
 
 locations = Location.create([
-  {city: "Washington", state: "DC", country: "USA", img_url: "img/locations/washdc.jpg"},
-  {city: "New York City", state: "NY", country: "USA", img_url: "img/locations/nyc.jpg"},
-  {city: "Boston", state: "MA", country: "USA", img_url: "img/locations/boston.jpg"},
-  {city: "Austin", state: "TX", country: "USA", img_url: "img/locations/austin.jpg"},
-  {city: "San Francisco", state: "CA", country: "USA", img_url: "img/locations/sanfran.jpg"},
-  {city: "Chicago", state: "IL", country: "USA", img_url: "img/locations/chicago.jpg"}
+  {city: "Washington", state: "DC", country: "USA", img_url: "https://cbsbaltimore.files.wordpress.com/2012/11/washington-d-c-skyline.jpg"},
+  {city: "New York City", state: "NY", country: "USA", img_url: "http://www.cubebreaker.com/wp-content/uploads/2014/04/skyline-01-new-york-city.jpg"},
+  {city: "Boston", state: "MA", country: "USA", img_url: "http://cdn.luxuo.com/wp-content/uploads/2014/12/Boston-Skyline.jpg"},
+  {city: "Austin", state: "TX", country: "USA", img_url: "http://www.24thstreetinvestments.com/wp-content/uploads/2016/05/Austin-Skyline.jpg"},
+  {city: "San Francisco", state: "CA", country: "USA", img_url: "http://ww2.hdnux.com/photos/31/22/51/6629969/9/rawImage.jpg"},
+  {city: "Chicago", state: "IL", country: "USA", img_url: "https://media.atre.yardi.com/2/50095/images/Victory-Tower-Chicago-Skyline-rendering.jpg"}
   ])
 
 events = Event.create([
