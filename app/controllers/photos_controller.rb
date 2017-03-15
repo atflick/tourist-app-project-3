@@ -1,13 +1,15 @@
 class PhotosController < ApplicationController
-  before_action :set_photo, only: [:show, :update, :destroy]
+  before_action :set_photo, only: [ :update, :destroy]
 
   def index
-    @photos = Photo.all
+    @event = Event.find(params[:event_id])
+    @photos = @event.photos
     render json: @photos
   end
 
   def show
-    render json: @photo
+    @photos = Photo.where(event_id: params[:id])
+    render json: @photos
   end
 
   def create
@@ -31,6 +33,6 @@ class PhotosController < ApplicationController
   end
 
   def photo_params
-    params.require(:photo).permit(comment:, title:, event_id:, img_url:)
+    params.require(:photo).permit(:comment, :title, :event_id, :img_url)
   end
 end
