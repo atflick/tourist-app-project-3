@@ -41,7 +41,6 @@ events = Event.create([
   {name: "Tanta Chicago", category: "restaurant", website_url: "https://www.tantachicago.com/", phone_number: "(312) 222-9700", address: "118 W Grand Ave, Chicago, IL 60654", location_id: 6},
 ])
 
->>>>>>> 53cb12304b58434eb6b706b38cde962d19694f95
 
 photos = Photo.create([
   {comment: "Really feels like I am at a farm", title: "Awesome atmosphere", event_id: 2, img_url: "https://cdn0.vox-cdn.com/thumbor/e6t9abocouZbB36URwXdTdDnoVs=/0x600/cdn0.vox-cdn.com/uploads/chorus_asset/file/5604703/6501329909_1de4e39440_o.0.jpg"},
