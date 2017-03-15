@@ -22,7 +22,7 @@ locations = Location.create([
   ])
 
 events = Event.create([
-<<<<<<< HEAD
+
   {name:"Holocaust Museum", category: "activities", img_url: "https://www.ushmm.org/m/img/N02358-1000x496.jpg",  address: "100 Raoul Wallenberg Pl SW, Washington, DC 20024", phone_number: "(555) 555-555", website_url: "https://www.ushmm.org/", location_id: 1},
   {name:"Founding Farmers", category: "restaurant", img_url: "https://bakingbeardy.files.wordpress.com/2015/02/founding-farmers.jpg", address: "1924 Pennsylvania Ave NW, Washington, DC 20006", phone_number: "(202) 822-8783", website_url: "http://www.wearefoundingfarmers.com/", location_id: 1},
   {name:"Kennedy Center", category: "entertainment", img_url: "https://drpence.files.wordpress.com/2013/07/img_4971.jpg", address: "2700 F St NW, Washington, DC 20566", phone_number: "(202) 467-4600", website_url: "http://www.kennedy-center.org/", location_id: 1},
@@ -41,26 +41,7 @@ events = Event.create([
   {name: "Art institute Chicago", category: "activities", img_url: "http://www.artic.edu/sites/default/files/styles/slideshow_scale/public/AIC%20Facade,%20North%20View.jpg?itok=brHq8j-6", website_url: "http://www.artic.edu/visit?campaign=chicago%20art%20museum&gclid=COaEp5jk2NICFQQz0wodF9cC7Q", phone_number: "(312) 443-3600", address: " 111 South Michigan Avenue", location_id: 6},
   {name: "Wrigley Field", category: "sports", date: "4-3 March 2017", img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Wrigley_Field_marquee_grandstand_exterior_IMG_2339.jpg/220px-Wrigley_Field_marquee_grandstand_exterior_IMG_2339.jpg", website_url: "http://chicago.cubs.mlb.com/chc/ballpark/", phone_number: "(773) 404-2827", address: "1060 W Addison St, Chicago, IL 60613", location_id: 6},
   {name: "Tanta Chicago", category: "restaurant", img_url: "https://static1.squarespace.com/static/5690797269a91a37897e9aa9/t/569c41d576d99c4f391b0dd0/1453081048590/Tanta_002.jpg?format=2500w", website_url: "https://www.tantachicago.com/", phone_number: "(312) 222-9700", address: "118 W Grand Ave, Chicago, IL 60654", location_id: 6},
-=======
-
-  {name:"Holocaust Museum", category: "culture", address: "100 Raoul Wallenberg Pl SW, Washington, DC 20024", phone_number: "(555) 555-555", website_url: "https://www.ushmm.org/", location_id: 1},
-  {name:"Founding Farmers", category: "dining", address: "1924 Pennsylvania Ave NW, Washington, DC 20006", phone_number: "(202) 822-8783", website_url: "http://www.wearefoundingfarmers.com/", location_id: 1},
-  {name:"Roaring Fork", category: "dining", address: "12223 Ranch Road 620 N Ste 105, Austin, TX 78750", phone_number: "(512) 382-6248", description: "A farm-to-table slant applies to big breakfast & lunch in casual, counter-service digs with a patio.", website_url: "http://noblesandwiches.com/", map_url: "https://www.google.com/maps/place/Noble+Sandwich+Co./@30.3190469,-97.7410031,17z/data=!3m1!4b1!4m5!3m4!1s0x8644ca610046a8d9:0x4c4b4811639b364d!8m2!3d30.3190469!4d-97.7388144?hl=en", img_url: "https://pbs.twimg.com/profile_images/3401173596/bc39e47c05ed8b45c294146062ad820a_400x400.jpeg", location_id: 4},
-  {name: "South By Southwest 2017", category: "Entertainment", date: "10 - 19 March, 2017", img_url: "http://www.shockya.com/news/wp-content/uploads/SXSW-Announces-Select-Speakers-and-Expanded-Access-for-All-Badge-Types-for-2017.png", website_url: "https://www.sxsw.com/", phone_number: "(512) 467-7979", address: "Various", location_id: 4},
-  {name: "Abe & Louie's", category: "dining", website_url: "http://abeandlouies.com/", phone_number: "(617) 536-6300", address: "793 Boylston Street Boston, MA 02116", location_id: 3},
-  {name: "Museum of Fine Arts", category: "culture", website_url: "http://www.mfa.org/", phone_number: "(617) 267-9300", address: "Avenue of the Arts 465 Huntington Avenue Boston, Massachusetts 02115", location_id: 3},
-  {name: "Gramcercy Tavern", category: "dining", website_url: "http://www.gramercytavern.com/", phone_number: "(212) 477-0777", address: " 42 East 20th St., between Park Avenue South & Broadway.", location_id: 2},
-  {name: "Madison Square Garden", category: "entertainment", website_url: "http://www.thegarden.com/", phone_number: "(212) 465-6741", address: "4 Pennsylvania Plaza, New York, NY 10001", location_id: 2},
-  {name: "9/11 memorial", category: "culture", website_url: "https://www.911memorial.org/", phone_number: "(212) 312-8800", address: "180 Greenwich Street New York, NY 1000", location_id: 2},
-  {name: "Quince", category: "dining", website_url: "http://quincerestaurant.com/", phone_number: "(415) 775-8500", address: " 470 PACIFIC AVE, SAN FRANCISCO, CA", location_id: 5},
-  {name: "Asian Art Museum", category: "culture", website_url: "http://www.asianart.org/", phone_number: "(415) 581-3500", address: "200 Larkin St San Francisco, CA 94102", location_id: 5},
-  {name: "Golden Gate Bridge", category: "entertainment", website_url: "http://www.goldengatebridge.org/", phone_number: "(415) 486-8655", address: "Presidio Station, San Francisco, CA 94129-0601", location_id: 5},
-  {name: "Art institute Chicago", category: "culture", website_url: "http://www.artic.edu/visit?campaign=chicago%20art%20museum&gclid=COaEp5jk2NICFQQz0wodF9cC7Q", phone_number: "(312) 443-3600", address: " 111 South Michigan Avenue", location_id: 6},
-  {name: "Wrigley Field", category: "sports", date: "4-3 March 2017", website_url: "http://chicago.cubs.mlb.com/chc/ballpark/", phone_number: "(773) 404-2827", address: "1060 W Addison St, Chicago, IL 60613", location_id: 6},
-  {name: "Tanta Chicago", category: "dining", website_url: "https://www.tantachicago.com/", phone_number: "(312) 222-9700", address: "118 W Grand Ave, Chicago, IL 60654", location_id: 6},
->>>>>>> 0b62a96ede280309e0ca18a7de14effb49521018
 ])
-
 
 photos = Photo.create([
   {comment: "Really feels like I am at a farm", title: "Awesome atmosphere", event_id: 2, img_url: "https://cdn0.vox-cdn.com/thumbor/e6t9abocouZbB36URwXdTdDnoVs=/0x600/cdn0.vox-cdn.com/uploads/chorus_asset/file/5604703/6501329909_1de4e39440_o.0.jpg"},
