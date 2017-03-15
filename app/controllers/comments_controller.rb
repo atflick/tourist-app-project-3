@@ -24,6 +24,6 @@ def create
     end
 
     def comments_params
-      params.require(:comments).permit(:name, :time,:date, :location_id)
+      params.require(:comments).permit(:comments, :title)
     end
 end

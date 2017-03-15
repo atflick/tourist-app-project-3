@@ -1,3 +1,3 @@
-class Commetns < ActiveRecord::Base
+class Comments < ActiveRecord::Base
     belongs_to :events
   end
