@@ -51,6 +51,20 @@ photos = Photo.create([
   ])
 
 comments = Comment.create([
-  {comment: "really great food", author: "Jimmy", event_id: 2},
-  {comment: "hate the food", author: "Johnny", event_id: 2}
+  {comment: "This place had very bad service. Never on planning on going there again. Go here at your own risk.", author: "Travis", event_id: 2},
+  {comment: "Nice Staff!", author: "Johnny", event_id: 2},
+  {comment: "Could use some vegan options", author: "Chris W aka CJ", event_id: 2},
+  {comment: "Awesome Place! I plan on going back soon", author: "Billy", event_id: 3},
+  {comment: "Had a great time with my family", author: "Johnny", event_id: 3},
+  {comment: "This place is BALLING YOOOOO!", author: "Travis", event_id: 4},
+  {comment: "service was sub par", author: "Eva", event_id: 4},
+  {comment: "Really love their fires", author: "Jake", event_id: 5},
+  {comment: "Amazing Service. Was seated as soon as I walked in", author: "Johnny", event_id: 5},
+  {comment: "ehhhhhh.", author: "Andy", event_id: 6},
+  {comment: "Had a Great time .", author: "Francisco", event_id: 6},
+  {comment: "AMZAING!", author: "Steve", event_id: 7},
+  {comment: "Not my cup of tea.", author: "Lisa", event_id: 8},
+  {comment: "Nice Place", author: "Mike", event_id: 9},
+  {comment: "Highly Recommend", author: "Kenny", event_id: 10},
+  {comment: "Loved this place always have a great time when there. Highly Recommend", author: "Connie", event_id: 11}
   ])
