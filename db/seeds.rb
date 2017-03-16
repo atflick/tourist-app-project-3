@@ -51,6 +51,6 @@ photos = Photo.create([
   ])
 
 comments = Comment.create([
-  {comment: "really great food", author: "Jimmy", event_id: 2},
-  {comment: "hate the food", author: "Johnny", event_id: 2}
+  {message: "really great food", author: "Jimmy", event_id: 2},
+  {message: "hate the food", author: "Johnny", event_id: 2}
   ])
