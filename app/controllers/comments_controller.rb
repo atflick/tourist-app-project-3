@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.create!(comment_params)
-    render json: @comments
+    render json: @comment
   end
 
   def update
@@ -33,6 +33,6 @@ class CommentsController < ApplicationController
     end
 
     def comment_params
-      params.require(:comments).permit(:comment, :author, :event_id)
+      params.require(:comment).permit(:comment, :author, :event_id)
     end
 end
