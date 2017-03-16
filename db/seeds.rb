@@ -51,7 +51,6 @@ photos = Photo.create([
   ])
 
 comments = Comment.create([
-<<<<<<< HEAD
   {message: "This place had very bad service. Never on planning on going there again. Go here at your own risk.", author: "Travis", event_id: 2},
   {message: "Nice Staff!", author: "Johnny", event_id: 2},
   {message: "Could use some vegan options", author: "Chris W aka CJ", event_id: 2},
@@ -68,8 +67,4 @@ comments = Comment.create([
   {message: "Nice Place", author: "Mike", event_id: 9},
   {message: "Highly Recommend", author: "Kenny", event_id: 10},
   {message: "Loved this place always have a great time when there. Highly Recommend", author: "Connie", event_id: 11}
-=======
-  {message: "really great food", author: "Jimmy", event_id: 2},
-  {message: "hate the food", author: "Johnny", event_id: 2}
->>>>>>> e999191705e9e48b976c49751ef928da306e52e9
-  ])
+])
